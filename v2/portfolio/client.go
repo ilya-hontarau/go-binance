@@ -715,6 +715,10 @@ func (c *Client) NewMarginOrderService() *MarginOrderService {
 	return &MarginOrderService{c: c}
 }
 
+func (c *Client) NewQueryMarginAccountOrder() *QueryMarginAccountOrderService {
+	return &QueryMarginAccountOrderService{c: c}
+}
+
 // NewMarginLoanService creates a new MarginLoanService
 func (c *Client) NewMarginLoanService() *MarginLoanService {
 	return &MarginLoanService{c: c}
